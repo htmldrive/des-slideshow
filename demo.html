@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>desSlideshow - Stylish featured image slideshow jQuery plugin</title>
+<style type="text/css">
+h2{
+	color: red;
+}
+pre{
+	padding: 4px;
+	border: #F90 dotted 1px;
+}
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/desSlideshow.js"></script>
+<script language="javascript" type="text/javascript">
+    $(function() {
+        $("#desSlideshow1").desSlideshow({
+            autoplay: 'enable',//option:enable,disable
+            slideshow_width: '800',//slideshow window width
+            slideshow_height: '249',//slideshow window height
+            thumbnail_width: '200',//thumbnail width
+            time_Interval: '4000',//Milliseconds
+            directory: 'images/'// flash-on.gif and flashtext-bg.jpg directory
+        });
+        $("#desSlideshow2").desSlideshow({
+            autoplay: 'disable',//option:enable,disable
+            slideshow_width: '600',//slideshow window width
+            slideshow_height: '249',//slideshow window height
+            thumbnail_width: '120',//thumbnail width
+            time_Interval: '4000',//Milliseconds
+            directory: 'images/'// flash-on.gif and flashtext-bg.jpg directory
+        });
+    });
+</script>
+</head>
+<body>
+<h1>desSlideshow - Stylish featured image slideshow jQuery plugin</h1>
+<h2>Demo1(autoplay enable; window width:800px; Thumbnail width: 200px)</h2>
+<div id="desSlideshow1" class="desSlideshow">
+	<div class="switchBigPic">
+		<div>
+                    <a title="" href="#"><img class="pic" src="./images/006.jpg" /></a>
+                    <p><strong>Description Title1</strong><br/>
+                        Description Content1
+                    </p>
+      </div>
+		<div><a title="" href="#"><img class="pic" src="./images/004.jpg" /></a>
+      </div>
+		<div><a title="" href="#"><img class="pic" src="./images/001.jpg" /></a>
+                    <p><strong>Description Title3</strong><br/>
+                        Description Content3
+                    </p>
+      </div>
+		<div><a title="" href="#"><img class="pic" src="./images/003.jpg" /></a>
+                    <p><strong>Description Title4</strong><br/>
+                        Description Content4
+                    </p>
+      </div>
+  </div>
+	<ul class="nav">
+		<li><a href="#">Slideshow1</a></li>
+  		<li><a href="#">Slideshow2</a></li>
+  		<li><a href="#">Slideshow3</a></li>
+  		<li><a href="#">Slideshow4</a></li>
+	</ul>
+</div>
+<h2>Demo2(autoplay disable; window width:600px; Thumbnail width: 120px)</h2>
+<div id="desSlideshow2" class="desSlideshow">
+	<div class="switchBigPic">
+		<div>
+                    <a title="" href="#"><img class="pic" src="./images/006.jpg" /></a>
+                    <p><strong>Description Title1</strong><br/>
+                        Description Content1
+                    </p>
+      </div>
+		<div><a title="" href="#"><img class="pic" src="./images/004.jpg" /></a>
+      </div>
+		<div><a title="" href="#"><img class="pic" src="./images/001.jpg" /></a>
+                    <p><strong>Description Title3</strong><br/>
+                        Description Content3
+                    </p>
+      </div>
+		<div><a title="" href="#"><img class="pic" src="./images/003.jpg" /></a>
+                    <p><strong>Description Title4</strong><br/>
+                        Description Content4
+                    </p>
+      </div>
+  </div>
+	<ul class="nav">
+		<li><a href="#">Slideshow1</a></li>
+  		<li><a href="#">Slideshow2</a></li>
+  		<li><a href="#">Slideshow3</a></li>
+  		<li><a href="#">Slideshow4</a></li>
+	</ul>
+</div>
+<h2>Usage</h2>
+<h3>Include js files.</h3>
+<pre>
+&lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js&quot;&gt;&lt;/script&gt;<br />&lt;script src=&quot;js/desSlideshow.js&quot;&gt;&lt;/script&gt;
+</pre>
+<h3>Add html.</h3>
+<pre>
+&lt;div id=&quot;desSlideshow&quot; class=&quot;desSlideshow&quot;&gt;<br />	&lt;div class=&quot;switchBigPic&quot;&gt;<br />		&lt;div&gt;<br />                    &lt;a title=&quot;&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;pic&quot; src=&quot;./images/006.jpg&quot; /&gt;&lt;/a&gt;<br />                    &lt;p&gt;&lt;strong&gt;Description Title1&lt;/strong&gt;&lt;br/&gt;<br />                        Description Content1<br />                    &lt;/p&gt;<br />                &lt;/div&gt;<br />		&lt;div&gt;&lt;a title=&quot;&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;pic&quot; src=&quot;./images/004.jpg&quot; /&gt;&lt;/a&gt;<br />                &lt;/div&gt;<br />		&lt;div&gt;&lt;a title=&quot;&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;pic&quot; src=&quot;./images/001.jpg&quot; /&gt;&lt;/a&gt;<br />                    &lt;p&gt;&lt;strong&gt;Description Title3&lt;/strong&gt;&lt;br/&gt;<br />                        Description Content3<br />                    &lt;/p&gt;<br />                &lt;/div&gt;<br />		&lt;div&gt;&lt;a title=&quot;&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;pic&quot; src=&quot;./images/003.jpg&quot; /&gt;&lt;/a&gt;<br />                    &lt;p&gt;&lt;strong&gt;Description Title4&lt;/strong&gt;&lt;br/&gt;<br />                        Description Content4<br />                    &lt;/p&gt;<br />                &lt;/div&gt;<br />        &lt;/div&gt;<br />	&lt;ul class=&quot;nav&quot;&gt;<br />		&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Slideshow1&lt;/a&gt;&lt;/li&gt;<br />  		&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Slideshow2&lt;/a&gt;&lt;/li&gt;<br />  		&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Slideshow3&lt;/a&gt;&lt;/li&gt;<br />  		&lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Slideshow4&lt;/a&gt;&lt;/li&gt;<br />	&lt;/ul&gt;<br />&lt;/div&gt;
+</pre>
+<h3>Add startup script.</h3>
+<pre>
+&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;<br />    $(function() {<br />        $(&quot;#desSlideshow&quot;).desSlideshow({<br />            autoplay: 'enable',//option:enable,disable<br />            slideshow_width: '800',//slideshow window width<br />            slideshow_height: '249',//slideshow window height<br />            thumbnail_width: '200',//thumbnail width<br />            time_Interval: '4000',//Milliseconds<br />            directory: 'images/'// flash-on.gif and flashtext-bg.jpg directory<br />        });<br />    });<br />&lt;/script&gt;
+</pre>
+<pre>
+
+@projectHomepage: <a href="http://www.htmldrive.net/go/to/desSlideshow">http://www.htmldrive.net/go/to/desSlideshow</a>
+
+@projectDescription: Stylish featured image slideshow jQuery plugin.
+
+@author: <a href="http://www.htmldrive.net">htmldrive.net</a>
+
+More script and css style : <a href="http://www.htmldrive.net">htmldrive.net</a>
+
+@version 1.1.0
+
+@license http://www.apache.org/licenses/LICENSE-2.0
+    </pre>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+    "name": "des-slideshow",
+    "version": "1.1.0",
+    "title": "desSlideshow - Stylish featured image slider",
+    "author": {
+        "name": "Htmldrive.net",
+        "url": "http://www.htmldrive.net"
+    },
+    "licenses": [
+        {
+            "type": "apache",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.6.1"
+    },
+    "keywords": [
+        "jquery",
+        "slideshow",
+        "slider",
+        "animation",
+        "ui",
+        "rotator"
+    ],
+    "homepage": "http://www.htmldrive.net/items/show/324/desSlideshow-Stylish-featured-image-slideshow-jQuery-plugin",
+    "demo": "http://www.htmldrive.net/items/demo/324/desSlideshow-Stylish-featured-image-slideshow-jQuery-plugin",
+    "download": "https://github.com/htmldrive/featured-image-slider",
+    "bugs": "https://github.com/htmldrive/featured-image-slider/issues"
+}
